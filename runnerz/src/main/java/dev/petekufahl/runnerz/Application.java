@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import dev.petekufahl.runnerz.run.Location;
-import dev.petekufahl.runnerz.run.Run;;
+import dev.petekufahl.runnerz.run.Run;
 
 @SpringBootApplication
 public class Application {

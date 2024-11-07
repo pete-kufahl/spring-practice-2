@@ -1,16 +1,19 @@
 package dev.petekufahl.runnerz.run;
 
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.GetMapping;
-
+import java.util.List;
 
 
 @RestController
 public class RunController {
 
-    @GetMapping("/hello")
-    public String home(@RequestParam String param) {
-        return "Hello, Runnerz!";
+    private final RunRepository runRepository;
+
+    public RunController(RunRepository runRepository) {
+        this.runRepository = runRepository;
+    }
+
+    List<Run> findAll() {
+        return null;
     }
 }
